@@ -40,7 +40,7 @@ def run_training() -> None:
     print("Mean squared error:", mean_squared_error(y_test, y_pred))
 
     # persist trained model
-    #save_pipeline(pipeline_to_persist= bikeshare_pipe)
+    save_pipeline(pipeline_to_persist= bikeshare_pipe)
     
 if __name__ == "__main__":
     run_training()

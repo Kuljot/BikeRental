@@ -30,9 +30,20 @@ def make_prediction(*,input_data:Union[pd.DataFrame, dict]) -> dict:
 
 if __name__ == "__main__":
 
-    data_in={'dteday':['2012-04-10'],'season':['summer'],'hr':['3am'],'holiday':['No'],'weekday':['Tue'],
-                'workingday':['Yes'],'weathersit':['Clear'],'temp':[8.92],'atemp':[7.0010],'hum':[71.0],
-                'windspeed':[8.9981],'yr':[2012], 'mnth':['April']}
+    data_in={'dteday':['2012-04-10'],
+             'season':['summer'],
+             'hr':['3am'],
+             'holiday':['No'],
+             'weekday':['Tue'],
+             'workingday':['Yes'],
+             'weathersit':['Clear'],
+             'temp':[8.92],
+             'atemp':[7.0010],
+             'hum':[71.0],
+             'windspeed':[8.9981],
+             'yr':[2012],
+             'mnth':['April']
+             }
     
     res = make_prediction(input_data=data_in)
     print(res)
