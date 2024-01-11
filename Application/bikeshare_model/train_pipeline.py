@@ -6,20 +6,13 @@ file = Path(__file__).resolve()
 parent, root = file.parent, file.parents[1]
 sys.path.append(str(root))
 from sklearn.model_selection import train_test_split
-
 from sklearn.metrics import mean_squared_error, r2_score
-
 from sklearn.model_selection import train_test_split
 from bikeshare_model.config.core import config
 from bikeshare_model.pipeline import bikeshare_pipe
 from bikeshare_model.processing.data_manager import load_dataset, save_pipeline
 0
 def run_training() -> None:
-    
-    """
-    Train the model.
-    """
-
     # read training data
     data = load_dataset(file_name=config.app_config.training_data_file)
 
@@ -31,7 +24,6 @@ def run_training() -> None:
         random_state=config.model_config.random_state,
     )
 
-    #bikeshare_pipe.fit(X_train,y_train)
     bikeshare_pipe.fit(X_train,y_train)
     y_pred = bikeshare_pipe.predict(X_test)
     
