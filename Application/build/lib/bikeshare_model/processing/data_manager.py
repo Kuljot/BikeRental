@@ -5,7 +5,7 @@ import re
 import joblib
 import pandas as pd
 from sklearn.pipeline import Pipeline
-from ..config import core
+from config import core
 from pathlib import Path
 
 file = Path(__file__).resolve()

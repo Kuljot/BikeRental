@@ -6,12 +6,12 @@ file = Path(__file__).resolve()
 parent, root = file.parent, file.parents[1]
 sys.path.append(str(root))
 from typing import Union
-from . import __version__ as _version
-from .config.core import config
-from .pipeline import bikeshare_pipe
-from .processing.data_manager import load_pipeline
-from .processing.data_manager import pre_pipeline_preparation
-from .processing.validation import validate_inputs
+from bike_sharing import __version__ as _version
+from bike_sharing.config.core import config
+from bike_sharing.pipeline import bikeshare_pipe
+from bike_sharing.processing.data_manager import load_pipeline
+from bike_sharing.processing.data_manager import pre_pipeline_preparation
+from bike_sharing.processing.validation import validate_inputs
 
 pipeline_file_name = f"{config.app_config.pipeline_save_file}{_version}.pkl"
 bikeshare_pipe= load_pipeline(file_name=pipeline_file_name)

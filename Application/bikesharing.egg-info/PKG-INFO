@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bikesharing
+Version: 0.1
+Summary: AIMLOPS Bike Sharing Project
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pydantic
+Requires-Dist: scikit-learn
+Requires-Dist: strictyaml
+Requires-Dist: ruamel.yaml
+Requires-Dist: joblib
+Requires-Dist: pytest
+
+AIMLOPS Module 3 Mini Project 2
