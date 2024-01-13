@@ -1,8 +1,0 @@
-joblib
-numpy
-pandas
-pydantic
-pytest
-ruamel.yaml
-scikit-learn
-strictyaml

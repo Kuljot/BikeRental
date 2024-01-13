@@ -13,6 +13,7 @@ from bikeshare_model.processing.features import WeekdayOneHotEncoder
 from bikeshare_model.processing.features import OutlierHandler
 from bikeshare_model.config.core import config
 
+
 bikeshare_pipe=Pipeline([
     ('weekday_imputer', WeekdayImputer(variable = config.model_config.weekday_var, date_var= config.model_config.dteday_var)),
     ('weather_imputer',WeathersitImputer(variable = config.model_config.weathersit_var)),
